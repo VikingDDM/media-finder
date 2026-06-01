@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light;
+    background: #f6f7f2;
+}
+
+body {
+    margin: 0;
+    color: #17202a;
+    background:
+        linear-gradient(180deg, rgba(246, 247, 242, 0.94), rgba(246, 247, 242, 1)),
+        url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 80h160M80 0v160' stroke='%23d7ddd2' stroke-width='1' opacity='.45'/%3E%3C/svg%3E");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ocean;
+}
